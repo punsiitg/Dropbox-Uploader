@@ -11,7 +11,7 @@ REM SET CYGMIN=%~dp0cygmin
 SET CYGWIN=C:\cygwin64\bin
 
 REM Where is the uploader script by Andrea Fabrizi
-SET UPLOADER=dropbox_uploader.sh
+SET UPLOADER=/cygdrive/c/Users/plakhanpal/Documents/GitHub/Dropbox-Uploader/dropbox_uploader.sh
 
 REM Backup PATH variable
 set P=%PATH%
@@ -29,5 +29,4 @@ set PATH=%P%
 
 REM Delete variable P
 set P=
-
 POPD
