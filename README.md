@@ -1,3 +1,15 @@
+# Note that we need to run dos2unix command on both files
+# From within dropShell, this command works:  put "/cygdrive/c/Users/plakhanpal/Documents/Sales and Inventory Management Software.xlsm" /
+# From uploader script, these commands work: 
+	# 1. Deletion: ./dropbox_uploader.sh -q delete /"Sales and Inventory Management Software.xlsm"
+	# 2. Upload: ./dropbox_uploader.sh -q upload "/cygdrive/c/Users/plakhanpal/Documents/Sales and Inventory Management Software.xlsm" /
+	
+
+# cd /cygdrive/c/Users/plakhanpal/Documents/GitHub/Dropbox-Uploader/
+# ./dropbox_uploader.sh -q delete /"Sales and Inventory Management Software.xlsm"
+# ./dropbox_uploader.sh -q upload "/cygdrive/c/Users/plakhanpal/Documents/Sales and Inventory Management Software.xlsm" /
+
+
 # Dropbox Uploader
 
 Dropbox Uploader is a **BASH** script which can be used to upload, download, delete, list files (and more!) from **Dropbox**, an online file sharing, synchronization and backup service. 

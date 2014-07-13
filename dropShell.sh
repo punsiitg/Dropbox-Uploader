@@ -21,7 +21,7 @@
 
 #Looking for dropbox uploader
 if [ -f "./dropbox_uploader.sh" ]; then
-    DU="./dropbox_uploader.sh"
+	DU="./dropbox_uploader.sh"
 else
     DU=$(which dropbox_uploader.sh)
     if [ $? -ne 0 ]; then
@@ -46,7 +46,8 @@ VERSION="0.2"
 umask 077
 
 #Dependencies check
-for i in $BIN_DEPS; do
+for i in $BIN_DEPS 
+do
     which $i > /dev/null
     if [ $? -ne 0 ]; then
         echo -e "Error: Required program could not be found: $i"
